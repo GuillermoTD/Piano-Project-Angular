@@ -1,16 +1,21 @@
 <div class="wrapper">
   <div class="piano">
-    <div class="key white">Do</div>
-    <span class="key black">C#</span>
-    <div class="key white">D</div>
-    <span class="key black">D#</span>
-    <div class="key white">E</div>
-    <div class="key white">F</div>
-    <span class="key black">F#</span>
-    <div class="key white">G</div>
-    <span class="key black">G#</span>
-    <div class="key white">A</div>
-    <span class="key black">A#</span>
-    <div class="key white">B</div>
+    <div (click)="playMusic(1)" class="key white">Do</div>
+    <div (click)="playMusic(2)" class="key black">C#</div>
+    <div (click)="playMusic(3)" class="key white">D</div>
+    <div (click)="playMusic(4)" class="key black">D#</div>
+    <div (click)="playMusic(5)" class="key white">E</div>
+    <div (click)="playMusic(6)" class="key white">F</div>
+    <div (click)="playMusic(7)" class="key black">F#</div>
+    <div (click)="playMusic(8)" class="key white">G</div>
+    <div (click)="playMusic(9)" class="key black">G#</div>
+    <div (click)="playMusic(10)" class="key white">A</div>
+    <div (click)="playMusic(11)" class="key black">A#</div>
+    <div (click)="playMusic(12)" class="key white">B</div>
   </div>
 </div>
+
+<audio controls>
+  <source src="notes/note8.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
